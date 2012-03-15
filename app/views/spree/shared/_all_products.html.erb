@@ -7,7 +7,7 @@
       <% end %>
     </ul>
   <% else %>
-    <h2>All Products</h2>
+    <h2>All Products 1</h2>
     <ul>
       <% Spree::Taxonomy.where(:name => "Categories").first.root.children.each_with_index do |taxon,i| %>
         <li><%= raw link_to(taxon.name, seo_url(taxon)) %></li>
